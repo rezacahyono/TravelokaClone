@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.TravelokaClone.BottomNav" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:layout_margin">@dimen/bottom_nav_margin</item>
+        <item name="android:padding">@dimen/bottom_nav_padding</item>
+        <item name="labelVisibilityMode">labeled</item>
+    </style>
+</resources>
