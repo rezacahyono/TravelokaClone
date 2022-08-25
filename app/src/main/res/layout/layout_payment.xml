@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_payment"
+    style="@style/Widget.TravelolaClone.CardView.Payment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/card_payment_padding">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_points"
+            android:drawablePadding="@dimen/drawabel_text_payment_padding"
+            android:text="@string/points"
+            android:textAppearance="@style/TextAppearance.TravelokaClone.Payment"
+            app:layout_constraintEnd_toStartOf="@id/tv_uangku"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_uangku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_uangku"
+            android:drawablePadding="@dimen/drawabel_text_payment_padding"
+            android:text="@string/uangku"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.TravelokaClone.Payment"
+            app:layout_constraintBottom_toBottomOf="@id/tv_points"
+            app:layout_constraintEnd_toStartOf="@id/tv_pay_later"
+            app:layout_constraintStart_toEndOf="@id/tv_points"
+            app:layout_constraintTop_toTopOf="@id/tv_points" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_pay_later"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_pay_later"
+            android:drawablePadding="@dimen/drawabel_text_payment_padding"
+            android:text="@string/payleter"
+            android:textAppearance="@style/TextAppearance.TravelokaClone.Payment"
+            app:layout_constraintBottom_toBottomOf="@id/tv_uangku"
+            app:layout_constraintEnd_toEndOf="@id/divider"
+            app:layout_constraintStart_toEndOf="@id/tv_uangku"
+            app:layout_constraintTop_toTopOf="@id/tv_uangku" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/divider"
+            style="@style/Widget.TravelokaClone.Divider.Payment"
+            android:layout_marginHorizontal="@dimen/divider_payment_margin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tv_pay"
+            app:layout_constraintStart_toEndOf="@id/tv_pay_later"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_earn"
+            style="@style/Widget.TravelokaClone.TextView.Shape.Payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/earn"
+            app:layout_constraintStart_toStartOf="@id/tv_points"
+            app:layout_constraintTop_toBottomOf="@id/tv_points" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_activate"
+            style="@style/Widget.TravelokaClone.TextView.Shape.Payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activate"
+            app:layout_constraintStart_toStartOf="@id/tv_uangku"
+            app:layout_constraintTop_toBottomOf="@id/tv_uangku" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_apply"
+            style="@style/Widget.TravelokaClone.TextView.Shape.Payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/apply"
+            app:layout_constraintStart_toStartOf="@id/tv_pay_later"
+            app:layout_constraintTop_toBottomOf="@id/tv_pay_later" />
+
+        <ImageView
+            android:id="@+id/btn_barcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:contentDescription="@string/btn_barcode"
+            android:focusable="true"
+            android:src="@drawable/ic_barcode"
+            app:layout_constraintBottom_toTopOf="@id/tv_pay"
+            app:layout_constraintEnd_toEndOf="@id/tv_pay"
+            app:layout_constraintStart_toStartOf="@id/tv_pay"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pay"
+            android:textAppearance="@style/TextAppearance.TravelokaClone.Shape.Payment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_barcode" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

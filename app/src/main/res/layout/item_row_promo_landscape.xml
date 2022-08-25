@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.imageview.ShapeableImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/image_promo_width"
+    android:layout_height="@dimen/promo_landscape_height"
+    android:layout_marginHorizontal="@dimen/image_promo_margin"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:shapeAppearance="@style/Widget.TravelokaClone.ImageView.Rounded.Small"
+    tools:src="@tools:sample/backgrounds/scenic"
+    android:scaleType="centerCrop"
+    android:contentDescription="@string/promo" />

@@ -7,4 +7,121 @@
     <string name="profile">Profil</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="notification">Notification</string>
+    <string name="chat">Chating</string>
+    <string name="search">search</string>
+    <string name="logo">logo</string>
+    <string name="points">Points</string>
+    <string name="uangku">Uangku</string>
+    <string name="payleter">PayLeter</string>
+    <string name="btn_barcode">Button Barcode</string>
+    <string name="pay">Bayar</string>
+    <string name="apply">Apply</string>
+    <string name="activate">Activate</string>
+    <string name="earn">Earn</string>
+    <string name="icon_menu">Icon Menu</string>
+
+
+    <!-- Title Menu -->
+    <string name="flight">Tiket Pesawat</string>
+    <string name="hotel">Hotel</string>
+    <string name="trains">Tiket Kereta Api</string>
+    <string name="xperience">Xpereience</string>
+    <string name="holiday">Holiday Stays</string>
+    <string name="bus">Tiket Bus &amp; Travel</string>
+    <string name="airport_transit">Antar-Jemput Bandara</string>
+    <string name="car">Mobil</string>
+    <string name="flight_hotel">Pesawat &amp; Hotel</string>
+    <string name="insurance">Asuransi</string>
+    <string name="healt_care">Kesehatan</string>
+    <string name="eat">Makan</string>
+    <string name="top_up_data_package">Isi Ulang &amp; Paket Data</string>
+    <string name="price_alert">Peringatan Harga</string>
+    <string name="jr_pass">JR Pass</string>
+    <string name="airport_train">Kereta Bandara</string>
+    <string name="pay_leter">Pay Leter</string>
+    <string name="buy_now_stay_leter">Buy Now Stay Leter</string>
+    <string name="flight_status">Status Penerbangan</string>
+    <string name="budget_planning">Perencana Anggaran</string>
+    <string name="promo">Promo</string>
+    <string name="title_flash_sale">⚡FLASH SALE⚡ hanya 4 Jam</string>
+    <string name="ends_in">Berakhir dalam</string>
+
+
+    <!-- Data hotel -->
+    <string name="urban_village_1">Kramat</string>
+    <string name="urban_village_2">Melawai</string>
+    <string name="urban_village_3">Grogol</string>
+    <string name="urban_village_4">Kamal Muara</string>
+    <string name="urban_village_5">Glodok</string>
+    <string name="urban_village_6">Kebayoran Lama Utara</string>
+    <string name="urban_village_7">Legian</string>
+    <string name="urban_village_8">Ubud</string>
+    <string name="urban_village_9">Kerobokan</string>
+    <string name="urban_village_10">Nusa Dua Beach</string>
+
+    <string name="title_hotel_1">Hotel Rivoli Senen Jakarta</string>
+    <string name="title_hotel_2">Liberta Hub Blok M Jakarta</string>
+    <string name="title_hotel_3">The Gloria Suites Grogol, Jakarta</string>
+    <string name="title_hotel_4">Oakwood Apartements PIK Jakarta (Pantai Indah Kapuk)</string>
+    <string name="title_hotel_5">The Packer Lodge Near Kota Tua</string>
+    <string name="title_hotel_6">Veranda Hotel At Pakubuwono</string>
+    <string name="title_hotel_7">Bliss Surfer Hotel by Tritama Hospitality</string>
+    <string name="title_hotel_8">Nara Ubud Cottage</string>
+    <string name="title_hotel_9">Sunrise Suite Bali</string>
+    <string name="title_hotel_10">Grand Hyatt Bali</string>
+
+    <string name="sale_1">Hemat 18%</string>
+    <string name="sale_2">Hemat 10%</string>
+    <string name="sale_3">Hemat 28%</string>
+    <string name="sale_4">Hemat 25%</string>
+    <string name="sale_5">Hemat 15%</string>
+    <string name="sale_6">Hemat 25%</string>
+    <string name="sale_7">Hemat 55%</string>
+    <string name="sale_8">Hemat 31%</string>
+    <string name="sale_9">Hemat 45%</string>
+    <string name="sale_10">Hemat 25%</string>
+
+    <string name="price_original_1">Rp 387.000</string>
+    <string name="price_original_2">Rp 387.630</string>
+    <string name="price_original_3">Rp 510.400</string>
+    <string name="price_original_4">Rp 1.706.665</string>
+    <string name="price_original_5">Rp 141.570</string>
+    <string name="price_original_6">Rp 873.600</string>
+    <string name="price_original_7">Rp 654.545</string>
+    <string name="price_original_8">Rp 360.000</string>
+    <string name="price_original_9">Rp 495.000</string>
+    <string name="price_original_10">Rp 4.196.425</string>
+
+    <string name="price_result_1">Rp 317.340</string>
+    <string name="price_result_2">Rp 348.867</string>
+    <string name="price_result_3">Rp 367.488</string>
+    <string name="price_result_4">Rp 1.279.999</string>
+    <string name="price_result_5">Rp 120.335</string>
+    <string name="price_result_6">Rp 655.200</string>
+    <string name="price_result_7">Rp 294.545</string>
+    <string name="price_result_8">Rp 248.400</string>
+    <string name="price_result_9">Rp 272.250</string>
+    <string name="price_result_10">Rp 3.147.319</string>
+
+    <string name="tab_jakarta">Jakarta</string>
+    <string name="tab_bali">Bali</string>
+    <string name="tab_bandung">Bandung</string>
+    <string name="tab_yogyakarta">Yogyakarta</string>
+    <string name="tab_semarang">Semarang</string>
+
+
+    <!-- Data Promo -->
+    <string name="title_promo_1">Diskon staycation s.d. Rp500rb</string>
+    <string name="title_promo_2">Jadi #TemanMendunia dengan keuntungan yang mendunia✈️</string>
+    <string name="title_promo_3">Flash sale hotel</string>
+
+    <string name="period_promo_1">Periode booking: 1 – 31 Juli 2022</string>
+    <string name="period_promo_2"> </string>
+    <string name="period_promo_3">Periode booking: Setiap jumat, 19.00 – 23.59 WIB!</string>
+
+    <string name="title_check_cupon">👀 Cek kupon di tiap hotel</string>
+    <string name="description_check_cupon">Berdasarkan aktifitas yang anda lihat</string>
+    <string name="title_promo">Promo menarik buat kamu😍</string>
+    <string name="description_promo">Traveling menyenangkan dengan promo</string>
 </resources>

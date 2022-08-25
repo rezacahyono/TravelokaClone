@@ -1,8 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="Widget.TravelokaClone.BottomNav" parent="Widget.MaterialComponents.BottomNavigationView">
         <item name="android:layout_margin">@dimen/bottom_nav_margin</item>
         <item name="android:padding">@dimen/bottom_nav_padding</item>
         <item name="labelVisibilityMode">labeled</item>
+        <item name="elevation">6dp</item>
     </style>
+
+    <style name="Widget.TravelokaClone.CardView.Search.Home" parent="Widget.MaterialComponents.CardView">
+        <item name="shapeAppearance">@style/ShapeAppearance.TravelokaClone.MediumComponent</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.TravelokaClone.CardView.Search.Home
+        </item>
+        <item name="cardElevation">0dp</item>
+        <item name="android:layout_margin">@dimen/search_margin</item>
+    </style>
+
+    <style name="Widget.TravelolaClone.CardView.Payment" parent="Widget.MaterialComponents.CardView">
+        <item name="shapeAppearance">@style/ShapeAppearance.TravelokaClone.SmallComponent</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.TravelokaClone.CardView.Payment</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+    <style name="ShapeAppearance.TravelokaClone.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/card_payment_corner</item>
+    </style>
+
+    <style name="ShapeAppearance.TravelokaClone.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/search_corner</item>
+    </style>
+
+    <style name="ThemeOverlay.TravelokaClone.CardView.Search.Home" parent="">
+        <item name="colorSurface">@color/white</item>
+    </style>
+
+    <style name="ThemeOverlay.TravelokaClone.CardView.Payment" parent="">
+        <item name="colorSurface">@color/blue</item>
+    </style>
+
+    <style name="TextAppearance.TravelokaClone.Payment" parent="TextAppearance.AppCompat.Body2">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Widget.TravelokaClone.Divider.Payment" parent="Widget.MaterialComponents.MaterialDivider">
+        <item name="android:layout_width">@dimen/divider_payment_width</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="dividerColor">@color/white</item>
+    </style>
+
+    <style name="Widget.TravelokaClone.Divider.Home" parent="Widget.MaterialComponents.MaterialDivider">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/divider_home_width</item>
+        <item name="dividerColor">@color/gray_light</item>
+    </style>
+
+    <style name="Widget.TravelokaClone.TextView.Shape.Payment" parent="Widget.MaterialComponents.TextView">
+        <item name="android:background">@drawable/shape_text_payment</item>
+        <item name="android:textAppearance">@style/TextAppearance.TravelokaClone.Shape.Payment
+        </item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="Widget.TravelokaClone.TextView.Shape.UrbanVillage" parent="Widget.MaterialComponents.TextView">
+        <item name="android:background">@drawable/shape_text_urban_village</item>
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Body2</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="maxLines">1</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Widget.TravelokaClone.TextView.Shape.Sale" parent="Widget.MaterialComponents.TextView">
+        <item name="android:background">@drawable/shape_text_sale</item>
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Body2</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="maxLines">1</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Widget.TravelokaClone.TextView.Shape.Time" parent="Widget.MaterialComponents.TextView">
+        <item name="android:background">@drawable/shape_text_time</item>
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Caption</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextAppearance.TravelokaClone.Shape.Payment" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextAppearance.TravelokaClone.Price" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextAppearance.TravelokaClone.Menu" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="Widget.TravelokaClone.ImageView.Rounded.Small" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/image_promo_corner</item>
+    </style>
+
+    <style name="Widget.TravelokaClone.ImageView.RoundedTop.Hotel" parent="">
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerSizeTopLeft">@dimen/card_hotel_image_corner</item>
+        <item name="cornerSizeTopRight">@dimen/card_hotel_image_corner</item>
+    </style>
+
+    <style name="TextAppearance.TravelokaClone.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textSize">18sp</item>
+    </style>
+    
+    <style name="Widget.TravelokaClone.Tabs" parent="Widget.MaterialComponents.TabLayout">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.TravelokaClone.TabLayout</item>
+        <item name="android:layout_height">@dimen/tab_height</item>
+        <item name="tabIndicatorColor">@color/blue</item>
+        <item name="tabIndicator">@drawable/tab_selected</item>
+        <item name="tabRippleColor">@color/white</item>
+        <item name="tabIndicatorHeight">@dimen/tab_height</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+        <item name="tabTextColor">@color/blue</item>
+    </style>
+
+
+    <style name="ThemeOverlay.TravelokaClone.TabLayout" parent="">
+        <item name="colorSurface">@android:color/transparent</item>
+    </style>
+
 </resources>
