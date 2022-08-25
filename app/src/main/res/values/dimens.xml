@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main Activity -->
+    <dimen name="bottom_nav_height">74dp</dimen>
+    <dimen name="bottom_nav_padding">9dp</dimen>
+    <dimen name="bottom_nav_margin">10dp</dimen>
+    <dimen name="bottom_nav_corner">40dp</dimen>
+
+    <dimen name="search_corner">12dp</dimen>
+    <dimen name="search_margin">8dp</dimen>
+    <dimen name="fragment_padding_bottom">86dp</dimen>
+
+    <!-- Home Layout -->
+    <dimen name="root_padding">20dp</dimen>
+    <dimen name="card_payment_corner">6dp</dimen>
+    <dimen name="drawabel_text_payment_padding">4dp</dimen>
+    <dimen name="divider_payment_width">1.2dp</dimen>
+    <dimen name="divider_payment_margin">16dp</dimen>
+    <dimen name="card_payment_padding">10dp</dimen>
+    <dimen name="divider_home_width">4dp</dimen>
+    <dimen name="promo_landscape_height">44dp</dimen>
+    <dimen name="image_promo_corner">6dp</dimen>
+    <dimen name="image_promo_width">336dp</dimen>
+    <dimen name="image_promo_margin">10dp</dimen>
+    <dimen name="time_margin">8dp</dimen>
+    <dimen name="card_hotel_corner">8dp</dimen>
+    <dimen name="card_hotel_heigth">190dp</dimen>
+    <dimen name="card_hotel_width">168dp</dimen>
+    <dimen name="card_text_medium_margin">8dp</dimen>
+    <dimen name="card_text_large_margin">12dp</dimen>
+    <dimen name="card_hotel_margin">10dp</dimen>
+    <dimen name="card_text_small_margin">4dp</dimen>
+    <dimen name="card_hotel_image_corner">7dp</dimen>
+    <dimen name="card_hotel_image_margin">2dp</dimen>
+    <dimen name="gift_width">152dp</dimen>
+    <dimen name="gift_heigth">76dp</dimen>
+    <dimen name="recycler_flash_sale_margin">8dp</dimen>
+    <dimen name="tab_height">38dp</dimen>
+    <dimen name="tab_padding">16dp</dimen>
+    <dimen name="image_promo_height">141dp</dimen>
+
+    <!-- Menu -->
+    <dimen name="icon_width">40dp</dimen>
+    <dimen name="max_width_title">68dp</dimen>
+    <dimen name="title_margin">4dp</dimen>
+    <dimen name="indicator_width">8dp</dimen>
+    <dimen name="indicator_spacing">2dp</dimen>
+    <dimen name="title_padding_bottom">16dp</dimen>
+</resources>

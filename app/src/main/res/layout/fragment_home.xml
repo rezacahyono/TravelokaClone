@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".presentation.ui.fragments.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/fragment_padding_bottom">
+
+
+        <include
+            android:id="@+id/layout_payment"
+            layout="@layout/layout_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/root_padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/pager_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/root_padding"
+            android:layout_marginTop="@dimen/root_padding"
+            app:layout_constraintBottom_toTopOf="@id/indicator_view"
+            app:layout_constraintTop_toBottomOf="@id/layout_payment" />
+
+        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+            android:id="@+id/indicator_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:dotsColor="@color/gray"
+            app:dotsCornerRadius="@dimen/indicator_width"
+            app:dotsSize="@dimen/indicator_width"
+            app:dotsSpacing="@dimen/indicator_spacing"
+            app:layout_constraintBottom_toTopOf="@id/divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pager_menu"
+            app:selectedDotColor="@color/blue" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/divider"
+            style="@style/Widget.TravelokaClone.Divider.Home"
+            android:layout_marginTop="@dimen/root_padding"
+            app:layout_constraintBottom_toTopOf="@id/recycler_promo_landscape"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/indicator_view" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_promo_landscape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/root_padding"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/image_promo_margin"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/divider"
+            tools:listitem="@layout/item_row_promo_landscape" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_title_flash_sale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/root_padding"
+            android:layout_marginTop="@dimen/root_padding"
+            android:drawableEnd="@drawable/ic_arrow_right_small"
+            android:text="@string/title_flash_sale"
+            android:textAppearance="@style/TextAppearance.TravelokaClone.Headline6"
+            app:layout_constraintTop_toBottomOf="@id/recycler_promo_landscape" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_title_count_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ends_in"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+            app:layout_constraintStart_toStartOf="@id/tv_title_flash_sale"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_flash_sale" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_count_down_value"
+            style="@style/Widget.TravelokaClone.TextView.Shape.Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/time_margin"
+            android:drawableStart="@drawable/ic_time_small"
+            android:drawablePadding="4dp"
+            app:layout_constraintStart_toEndOf="@id/tv_title_count_down"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_flash_sale"
+            tools:text="04:03:12" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/recycler_flash_sale_margin"
+            android:background="@color/blue"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/card_hotel_margin"
+            android:paddingVertical="@dimen/card_hotel_margin"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_count_down"
+            tools:listitem="@layout/item_row_hotel" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_title_check_cupon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/root_padding"
+            android:layout_marginTop="@dimen/root_padding"
+            android:drawableEnd="@drawable/ic_arrow_right_small"
+            android:text="@string/title_check_cupon"
+            android:textAppearance="@style/TextAppearance.TravelokaClone.Headline6"
+            app:layout_constraintTop_toBottomOf="@id/recycler_hotel" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_title_description_check_cupon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/description_check_cupon"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+            app:layout_constraintEnd_toEndOf="@id/tv_title_check_cupon"
+            app:layout_constraintStart_toStartOf="@id/tv_title_check_cupon"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_check_cupon" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_cities"
+            style="@style/Widget.TravelokaClone.Tabs"
+            android:layout_width="0dp"
+            android:layout_marginTop="@dimen/recycler_flash_sale_margin"
+            android:clipToPadding="false"
+            android:paddingHorizontal="@dimen/tab_padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_description_check_cupon"
+            app:tabContentStart="4dp"
+            app:tabMode="scrollable">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_bali" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_jakarta" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_bandung" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_yogyakarta" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_semarang" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_hotel_by_cities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/recycler_flash_sale_margin"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/card_hotel_margin"
+            android:paddingVertical="@dimen/card_hotel_margin"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tab_cities"
+            tools:listitem="@layout/item_row_hotel" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_title_promo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/root_padding"
+            android:layout_marginTop="@dimen/root_padding"
+            android:drawableEnd="@drawable/ic_arrow_right_small"
+            android:text="@string/title_promo"
+            android:textAppearance="@style/TextAppearance.TravelokaClone.Headline6"
+            app:layout_constraintTop_toBottomOf="@id/recycler_hotel_by_cities" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_title_description_promo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/description_promo"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+            app:layout_constraintEnd_toEndOf="@id/tv_title_promo"
+            app:layout_constraintStart_toStartOf="@id/tv_title_promo"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_promo" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_promo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/recycler_flash_sale_margin"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_description_promo"
+            tools:itemCount="3"
+            tools:listitem="@layout/item_row_promo" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

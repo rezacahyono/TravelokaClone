@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/card_hotel_margin"
+    app:cardCornerRadius="@dimen/card_hotel_corner"
+    app:cardElevation="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_hotel"
+            android:layout_width="@dimen/card_hotel_width"
+            android:layout_height="@dimen/card_hotel_heigth"
+            android:layout_margin="@dimen/card_hotel_image_margin"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearance="@style/Widget.TravelokaClone.ImageView.RoundedTop.Hotel"
+            tools:src="@drawable/hotel6" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_urban_village"
+            style="@style/Widget.TravelokaClone.TextView.Shape.UrbanVillage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="160dp"
+            android:layout_marginEnd="@dimen/card_text_medium_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:ellipsize="end"
+            android:maxLines="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Kebayoran Baru Utara" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_sale"
+            style="@style/Widget.TravelokaClone.TextView.Shape.Sale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/card_text_medium_margin"
+            android:layout_marginBottom="@dimen/card_text_medium_margin"
+            android:maxWidth="160dp"
+            android:maxLines="1"
+            android:ellipsize="start"
+            app:layout_constraintBottom_toBottomOf="@id/iv_hotel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Hemat 18%" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_title_hotel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/card_text_medium_margin"
+            android:layout_marginTop="@dimen/card_text_medium_margin"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:minLines="2"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_hotel"
+            tools:text="Hotel Rivoli Senen Jakarta" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_price_original"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/card_text_medium_margin"
+            android:layout_marginTop="@dimen/card_text_medium_margin"
+            android:textAppearance="@style/TextAppearance.TravelokaClone.Price"
+            android:textColor="@color/text_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_hotel"
+            tools:text="Rp 387.000" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_price_result"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/card_text_medium_margin"
+            android:layout_marginTop="@dimen/card_text_small_margin"
+            android:layout_marginBottom="@dimen/card_text_large_margin"
+            android:textAppearance="@style/TextAppearance.TravelokaClone.Price"
+            android:textColor="@color/orange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_price_original"
+            tools:text="Rp 387.000" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -29,6 +29,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
@@ -52,6 +56,9 @@ dependencies {
 
     // Constraint Layout
     implementation "androidx.constraintlayout:constraintlayout:$constraint_version"
+
+    // Circle Indicator
+    implementation "com.tbuonomo:dotsindicator:4.3"
 
     // Basic Testing
     testImplementation 'junit:junit:4.13.2'

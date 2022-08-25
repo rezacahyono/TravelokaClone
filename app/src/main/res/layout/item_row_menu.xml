@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/title_padding_bottom">
+
+    <ImageView
+        android:id="@+id/iv_icon_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/icon_menu"
+        app:layout_constraintBottom_toTopOf="@id/tv_title_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_menu_flight" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_title_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/title_margin"
+        android:maxWidth="@dimen/max_width_title"
+        android:maxLines="2"
+        android:minLines="2"
+        android:ellipsize="end"
+        android:textAppearance="@style/TextAppearance.TravelokaClone.Menu"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@id/iv_icon_menu"
+        app:layout_constraintStart_toStartOf="@id/iv_icon_menu"
+        app:layout_constraintTop_toBottomOf="@id/iv_icon_menu"
+        tools:text="Antar-Jemput Bandara" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
