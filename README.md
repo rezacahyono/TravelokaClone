@@ -20,7 +20,7 @@ Terdapat bahan bahan yang saya butuhkan untuk membuat TravelokaClone ini, dianta
 ## Screenshot
 | photo | photo |
 |-------|-------|
-|![take1](screenshot/take1.png)|![take2](screenshot/take2.png)|
+|![take1](screenshot/Screenshot_20220924_184159.png)|![take2](Screenshot_20220924_184243.png)|
 
 ## Installation
 There are several stages for application installation.
