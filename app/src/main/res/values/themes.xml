@@ -11,4 +11,18 @@
         <item name="android:textColorPrimary">@color/text</item>
         <item name="android:textColorSecondary">@color/text</item>
     </style>
+
+    <style name="Theme.TravelokaClone.Starting" parent="Theme.TravelokaClone.Starting.Base.Legacy" />
+
+    <style name="Theme.TravelokaClone.Starting.Base" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="colorAccent">@color/blue</item>
+    </style>
+
+    <style name="Theme.TravelokaClone.Starting.Base.Legacy">
+        <item name="android:windowBackground">@drawable/static_traveloka_logo</item>
+    </style>
 </resources>
