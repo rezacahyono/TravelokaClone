@@ -1,4 +1,4 @@
-package com.rchyn.travelokaclone.presentation.ui.fragments
+package com.rchyn.travelokaclone.presentation.ui.fragments.home
 
 import TimerFlow
 import androidx.lifecycle.*
